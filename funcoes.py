@@ -11,9 +11,9 @@ def loginCompetidor (nomeCompetidor):
     return nome
 
 def dicas():
-    x=0
+    x=1
     listaDica = []
-    while(x < 3):
+    while(x < 4):
         dica = input(f"Digite a {x} dica: ")  
         listaDica.append(dica)
         x = x + 1
