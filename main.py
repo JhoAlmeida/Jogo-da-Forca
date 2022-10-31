@@ -1,7 +1,10 @@
 from funcoes import (limparTela, loginCompetidor, loginDesafiante, dicas, desenho)
 
 limparTela()
-print ("Bem-vindo ao jogo da forca!")
+
+print ("""=================================   ____
+===Bem-vindo ao jogo da forca!===   |  |
+=================================  _|_\n""")
 
 desafiante = loginDesafiante ("Informe o nome do desafiante: ")
 competidor = loginCompetidor ("Informe o nome do competidor: ")
@@ -58,8 +61,7 @@ try:
         if tentar == "1":
             quantasDicas = quantasDicas - dica 
             dica = dica + 1
-            print ("""A sua dica é: ", listaDicas.pop()
-            f"\nVocê já pediu {dica} dica(s), agora restam {quantasDicas} dicas!""")
+            print ("A sua dica é: ", listaDicas.pop(), f"\nVocê já pediu {dica} dica(s), agora restam {quantasDicas} dicas!")
             print("\nAgora você tem que chutar uma letra!")
             chute = input("Informe a letra que deseja chutar: ")
             letrasChutadas.append(chute.upper())
@@ -109,7 +111,7 @@ try:
                 erro = erro + 1
                 desenho(erro)
                 letrasChutadas.append(chute.upper())
-        
+            
         else:
             print("Comando invalido")
             tentar == 1 
