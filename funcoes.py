@@ -10,8 +10,62 @@ def loginCompetidor (nomeCompetidor):
     nome = input (nomeCompetidor)
     return nome
 
-def pedirDicas (dicas):
-    numero = 0
-    while numero < 3:
-        numero = numero + 1
-        input (f"Informe a {numero}º dica\n")
+def dicas():
+    x=0
+    listaDica = []
+    while(x < 3):
+        dica = input(f"Digite a {x} dica: ")  
+        listaDica.append(dica)
+        x = x + 1
+    return listaDica
+
+def desenho (erro):
+    print ("  _______     ")
+    print (" |/      |    ")
+    
+    if(erro == 1):
+        print(" |      (;_;)   ")
+        print(" |              ")
+        print(" |              ")
+        print(" |              ")
+
+    if(erro == 2):
+        print(" |      (;_;)   ")
+        print(" |        |     ")
+        print(" |              ")
+        print(" |              ")
+ 
+    if(erro == 3):
+        print(" |      (;_;)   ")
+        print(" |        | \   ")
+        print(" |              ")
+        print(" |              ")
+
+    if(erro == 4):
+        print(" |      (;_;)    ")
+        print(" |      / | \    ")
+        print(" |               ")
+        print(" |               ")
+
+    if(erro == 5):
+        print(" |      (;_;)   ")
+        print(" |      / | \   ")
+        print(" |        |     ")
+        print(" |              ")
+
+    if(erro == 6):
+        print(" |      (;_;)    ")
+        print(" |      / | \    ")
+        print(" |        |      ")
+        print(" |      /        ")
+
+    if (erro == 7):
+        print(" |      (;_;)    ")
+        print(" |      / | \    ")
+        print(" |        |      ")
+        print(" |       / \     ")
+
+    print(" |               ")
+    print("_|___            ")
+    print()
+
